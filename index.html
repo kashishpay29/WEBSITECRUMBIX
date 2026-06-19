@@ -780,68 +780,65 @@ footer{
 /* RESPONSIVE */
 @media(max-width:900px){
   /* NAV */
-  nav{padding:20px 24px}
-  nav.scrolled{padding:14px 24px}
+  nav{padding:18px 20px}
+  nav.scrolled{padding:12px 20px}
   .nav-links{display:none}
   .hamburger{display:flex}
-  .nav-logo{font-size:1rem;letter-spacing:0.18em}
+  .nav-logo{font-size:0.85rem;letter-spacing:0.18em}
 
-  /* HERO */
-  .hero-title{font-size:clamp(3.8rem,16vw,6rem);line-height:0.88}
-  .hero-content{padding:0 28px}
-  .hero-scroll{bottom:32px}
+  /* HERO — keep full screen, scale title */
+  .hero-title{font-size:clamp(2.8rem,10vw,5rem);line-height:0.9}
+  .hero-content{padding:0 20px}
+  .hero-scroll{bottom:24px}
 
-  /* COLLECTION ROWS — stack vertically */
-  .col-row{grid-template-columns:1fr;min-height:auto}
-  .col-row-A .col-text{order:2}
-  .col-row-A .col-img{order:1}
-  .col-row-B .col-img{order:1}
-  .col-row-B .col-text{order:2}
-  .col-img{height:80vw}
-  .col-text{padding:48px 28px 56px}
-  .col-text h2{font-size:clamp(2.6rem,10vw,4rem)}
-  .col-text p{font-size:0.9rem;max-width:100%}
-  .col-tag{font-size:0.6rem;padding:8px 16px}
+  /* COLLECTION ROWS — keep 2 columns, tighten padding/fonts */
+  .col-text{padding:40px 28px}
+  .col-text h2{font-size:clamp(1.4rem,3.5vw,2.8rem)}
+  .col-text p{font-size:0.65rem;max-width:100%}
+  .col-tag{font-size:0.45rem;padding:5px 10px}
+  .col-img{min-height:45vw}
 
-  /* EDITORIAL — stack vertically */
-  .editorial-block{grid-template-columns:1fr;min-height:auto}
-  .editorial-block.reverse{direction:ltr}
-  .editorial-img{height:75vw}
-  .editorial-text{padding:52px 28px 60px}
-  .editorial-text h2{font-size:clamp(2.4rem,9vw,3.8rem)}
-  .editorial-text p{font-size:0.9rem;max-width:100%}
-  .flavor-tags{gap:10px}
-  .flavor-tag{font-size:0.6rem;padding:8px 18px}
-  .accent-line{margin-bottom:32px}
+  /* EDITORIAL — keep 2 columns, tighten */
+  .editorial-text{padding:40px 28px}
+  .editorial-text h2{font-size:clamp(1.4rem,3.5vw,2.8rem)}
+  .editorial-text p{font-size:0.65rem;max-width:100%}
+  .flavor-tag{font-size:0.45rem;padding:6px 12px}
+  .accent-line{margin-bottom:24px}
+  .editorial-img{min-height:45vw}
 
   /* CRAFT */
-  .craft-section{height:auto;min-height:85vh;padding:80px 0}
-  .craft-content{padding:0 28px}
-  .craft-content h2{font-size:clamp(3rem,13vw,5.5rem)}
-  .craft-content p{font-size:0.88rem}
+  .craft-section{height:auto;min-height:80vh;padding:60px 0}
+  .craft-content{padding:0 20px}
+  .craft-content h2{font-size:clamp(2rem,8vw,4rem)}
+  .craft-content p{font-size:0.7rem}
   .craft-float{display:none}
 
   /* QUOTE */
-  .quote-block{padding:72px 28px}
-  .quote-text{font-size:clamp(1.6rem,5.5vw,2.5rem)}
+  .quote-block{padding:60px 20px}
+  .quote-text{font-size:clamp(1.1rem,4vw,2rem)}
 
   /* CONNECT */
-  .connect-section{padding:80px 28px}
-  .connect-section h2{font-size:clamp(2.8rem,11vw,4.5rem)}
-  .connect-link{max-width:100%;padding:28px 0}
-  .connect-link-label{font-size:clamp(1.8rem,7vw,2.8rem)}
+  .connect-section{padding:60px 20px}
+  .connect-section h2{font-size:clamp(1.8rem,7vw,3.5rem)}
+  .connect-link{max-width:100%;padding:22px 0}
+  .connect-link-label{font-size:clamp(1.2rem,5vw,2.2rem)}
 
   /* FOOTER */
-  footer{padding:40px 28px;flex-direction:column;align-items:flex-start;gap:20px}
-  .footer-logo{font-size:1.2rem}
-  .footer-copy{font-size:0.58rem}
+  footer{padding:32px 20px;flex-direction:column;align-items:flex-start;gap:16px}
+  .footer-logo{font-size:0.9rem}
+  .footer-copy{font-size:0.5rem}
 
   /* MOBILE MENU */
-  .mobile-menu a{font-size:2.4rem}
+  .mobile-menu a{font-size:2rem}
 
   /* DOME HERO */
-  .dome-hero{height:60vh}
-  .dome-hero-text{left:28px;bottom:40px;max-width:90%}
+  .dome-hero{height:50vw}
+  .dome-hero-text{left:20px;bottom:24px;max-width:55%}
+  .dome-hero-text h2{font-size:clamp(1.2rem,3.5vw,2.5rem)}
+  .dome-hero-text p{font-size:0.6rem;max-width:260px}
+
+  /* COOKIES STRIP */
+  .cookies-strip{height:30vw}
 }
 
 
