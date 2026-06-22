@@ -952,42 +952,25 @@ footer{
   .collection-intro{padding:80px 24px 50px}
   .collection-intro h2{font-size:clamp(2.2rem,9vw,3.2rem)}
 
-  /* Product sections -> compact 2-up card grid, image first, no big gaps */
-  .collection-section,.dipsy-section,.dunkies-section{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:14px;
-    padding:14px;
-  }
-  .col-divider{display:none}
-
-  .col-row,.editorial-block,.editorial-block.reverse{
-    display:flex;
-    flex-direction:column;
-    grid-template-columns:none;
-    min-height:auto;
-    direction:ltr;
-    background:var(--bg2);
-    border:1px solid rgba(212,175,55,0.1);
-  }
-  .col-row-A .col-text,.col-row-A .col-img,
-  .col-row-B .col-text,.col-row-B .col-img,
-  .col-text,.editorial-text{order:2 !important}
-  .col-row-A .col-img,.col-row-B .col-img,
-  .col-img,.editorial-img{order:1 !important;height:34vw}
+  /* Product rows -> stay side-by-side like desktop, just compact, alternating sides */
+  .col-row{min-height:unset;height:230px;margin-bottom:10px}
+  .editorial-block,.editorial-block.reverse{min-height:unset;height:230px}
 
   .col-text,.editorial-text{
-    padding:14px 14px 18px;
-    background:transparent;
-    justify-content:flex-start;
+    padding:14px 16px;
+    justify-content:center;
   }
-  .col-text .section-label,.editorial-text .section-label{font-size:0.5rem;letter-spacing:0.2em;margin-bottom:8px}
-  .col-text h2,.editorial-text h2{font-size:1.05rem;line-height:1.15;margin:0 0 8px}
-  .accent-line{display:none}
-  .col-text p,.editorial-text p{display:none}
-  .col-tags,.flavor-tags{display:none}
-  .editorial-detail{display:none}
-  .col-img-label,.strip-cell-label{display:none}
+  .col-text .section-label,.editorial-text .section-label{font-size:0.5rem;letter-spacing:0.2em;margin-bottom:6px}
+  .col-text h2,.editorial-text h2{font-size:1.15rem;line-height:1.15;margin:0 0 8px}
+  .accent-line{margin-bottom:10px}
+  .col-text p,.editorial-text p{
+    font-size:0.68rem;line-height:1.45;max-width:none;margin-bottom:10px;
+    display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden;
+  }
+  .col-tags,.flavor-tags{gap:5px}
+  .col-tag,.flavor-tag{font-size:0.5rem;padding:4px 8px;letter-spacing:0.1em}
+  .editorial-detail{font-size:0.5rem}
+  .col-img-label,.strip-cell-label{font-size:0.5rem}
 
   .dome-hero{height:min(55vw,420px)}
   .dome-hero-text{left:20px;right:20px;bottom:24px;max-width:none}
