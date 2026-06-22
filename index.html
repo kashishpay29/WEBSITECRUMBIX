@@ -956,8 +956,8 @@ footer{
   .col-row{grid-template-columns:1fr;min-height:auto}
   .col-row-A .col-text,.col-row-A .col-img,
   .col-row-B .col-text,.col-row-B .col-img{order:initial}
-  .col-img{order:1;height:55vh}
-  .col-text{order:2;padding:48px 24px 56px}
+  .col-img{order:1;height:min(42vw,320px)}
+  .col-text{order:2;padding:36px 24px 48px}
   .col-text h2{font-size:clamp(2.2rem,9vw,3.2rem)}
   .col-text p{max-width:none;font-size:1rem;line-height:1.8}
   .col-tag{font-size:0.7rem;padding:9px 18px}
@@ -970,23 +970,23 @@ footer{
     min-height:auto;
     direction:ltr;
   }
-  .editorial-img{height:55vh}
-  .editorial-text{padding:48px 24px 56px}
+  .editorial-img{height:min(42vw,320px)}
+  .editorial-text{padding:36px 24px 48px}
   .editorial-text h2{font-size:clamp(2.2rem,9vw,3.2rem)}
   .editorial-text p{max-width:none;font-size:1rem;line-height:1.8}
   .flavor-tag{font-size:0.7rem;padding:9px 18px}
   .editorial-detail{font-size:0.72rem}
 
-  .dome-hero{height:70vh}
-  .dome-hero-text{left:24px;right:24px;bottom:40px;max-width:none}
-  .dome-hero-text h2{font-size:clamp(2.2rem,9vw,3.2rem)}
-  .dome-hero-text p{max-width:none;font-size:0.95rem;line-height:1.8}
+  .dome-hero{height:min(55vw,420px)}
+  .dome-hero-text{left:20px;right:20px;bottom:24px;max-width:none}
+  .dome-hero-text h2{font-size:clamp(2rem,8vw,2.8rem)}
+  .dome-hero-text p{max-width:none;font-size:0.9rem;line-height:1.7}
 
   .cookies-strip{grid-template-columns:1fr;height:auto}
-  .strip-cell{height:200px}
+  .strip-cell{height:140px}
   .strip-cell-label{font-size:0.7rem}
 
-  .craft-section{height:80vh}
+  .craft-section{height:min(60vh,480px)}
   .craft-content{padding:0 24px}
   .craft-content h2{font-size:clamp(3rem,14vw,5rem)}
   .craft-content p{max-width:none;font-size:1rem;line-height:1.8}
@@ -1011,8 +1011,8 @@ footer{
 
 @media(max-width:480px){
   .hero-title{font-size:clamp(2.4rem,16vw,3.6rem)}
-  .col-text,.editorial-text{padding:40px 20px 48px}
-  .col-img,.editorial-img{height:48vh}
+  .col-text,.editorial-text{padding:32px 20px 40px}
+  .col-img,.editorial-img{height:min(45vw,260px)}
   .flavor-tags,.col-tags{gap:8px}
   .flavor-tag,.col-tag{font-size:0.68rem;padding:8px 16px}
 }
