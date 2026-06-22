@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=1200, shrink-to-fit=yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <title>CRUMBIX & CO. — Artisan Cookies, Mumbai</title>
 <meta name="description" content="Crumbix & Co. crafts luxury handmade cookies — Dipsy Bites chocolate domes and Dunkies. Indulgence, elevated. Based in Mumbai.">
 <meta property="og:title" content="CRUMBIX & CO. — Artisan Cookies">
@@ -930,6 +930,92 @@ footer{
 }
 
 /* Collection responsive handled in main media queries */
+/* ============================================================== */
+
+/* ===================== MOBILE RESPONSIVE ===================== */
+@media(max-width:768px){
+  body{font-size:17px}
+
+  nav{padding:18px 20px}
+  nav.scrolled{padding:14px 20px}
+  .nav-logo{font-size:1.05rem}
+
+  .mobile-menu{gap:32px}
+  .mobile-menu a{font-size:2.2rem}
+
+  .hero-title{font-size:clamp(2.8rem,16vw,5rem)}
+  .hero-sub{font-size:0.75rem;letter-spacing:0.2em}
+  .hero-eyebrow{margin-bottom:20px;font-size:0.7rem}
+
+  .section-label{font-size:0.7rem;letter-spacing:0.35em}
+
+  .collection-intro{padding:80px 24px 50px}
+  .collection-intro h2{font-size:clamp(2.2rem,9vw,3.2rem)}
+
+  /* Collection grid rows -> stacked */
+  .col-row{grid-template-columns:1fr;min-height:auto}
+  .col-row-A .col-text,.col-row-A .col-img,
+  .col-row-B .col-text,.col-row-B .col-img{order:initial}
+  .col-img{order:1;height:55vh}
+  .col-text{order:2;padding:48px 24px 56px}
+  .col-text h2{font-size:clamp(2.2rem,9vw,3.2rem)}
+  .col-text p{max-width:none;font-size:1rem;line-height:1.8}
+  .col-tag{font-size:0.7rem;padding:9px 18px}
+  .col-img-label{font-size:0.7rem}
+
+  /* Editorial blocks -> stacked, image first */
+  .editorial-block,
+  .editorial-block.reverse{
+    grid-template-columns:1fr;
+    min-height:auto;
+    direction:ltr;
+  }
+  .editorial-img{height:55vh}
+  .editorial-text{padding:48px 24px 56px}
+  .editorial-text h2{font-size:clamp(2.2rem,9vw,3.2rem)}
+  .editorial-text p{max-width:none;font-size:1rem;line-height:1.8}
+  .flavor-tag{font-size:0.7rem;padding:9px 18px}
+  .editorial-detail{font-size:0.72rem}
+
+  .dome-hero{height:70vh}
+  .dome-hero-text{left:24px;right:24px;bottom:40px;max-width:none}
+  .dome-hero-text h2{font-size:clamp(2.2rem,9vw,3.2rem)}
+  .dome-hero-text p{max-width:none;font-size:0.95rem;line-height:1.8}
+
+  .cookies-strip{grid-template-columns:1fr;height:auto}
+  .strip-cell{height:200px}
+  .strip-cell-label{font-size:0.7rem}
+
+  .craft-section{height:80vh}
+  .craft-content{padding:0 24px}
+  .craft-content h2{font-size:clamp(3rem,14vw,5rem)}
+  .craft-content p{max-width:none;font-size:1rem;line-height:1.8}
+
+  .quote-block{padding:70px 24px}
+  .quote-text{font-size:clamp(1.6rem,7vw,2.2rem)}
+  .quote-attr{font-size:0.72rem}
+
+  .connect-section{padding:100px 24px}
+  .connect-section h2{font-size:clamp(2.6rem,10vw,3.6rem)}
+  .connect-link{max-width:100%}
+  .connect-link-label{font-size:clamp(1.7rem,8vw,2.4rem)}
+  .connect-link-sub{font-size:0.7rem}
+
+  footer{padding:40px 24px;flex-direction:column;text-align:center;gap:16px}
+  .footer-links{gap:20px;flex-wrap:wrap;justify-content:center}
+  .footer-links a,.footer-copy{font-size:0.72rem}
+  .footer-logo{font-size:1.2rem}
+
+  .gold-sep{margin:50px auto}
+}
+
+@media(max-width:480px){
+  .hero-title{font-size:clamp(2.4rem,16vw,3.6rem)}
+  .col-text,.editorial-text{padding:40px 20px 48px}
+  .col-img,.editorial-img{height:48vh}
+  .flavor-tags,.col-tags{gap:8px}
+  .flavor-tag,.col-tag{font-size:0.68rem;padding:8px 16px}
+}
 /* ============================================================== */
 </style>
 </head>
