@@ -956,14 +956,21 @@ footer{
   .col-row{min-height:230px;height:auto;align-items:stretch;margin-bottom:18px}
   .editorial-block,.editorial-block.reverse{min-height:230px;height:auto;align-items:stretch;margin-bottom:18px}
 
-  /* Show the whole product photo, no cropping */
+  /* Show the whole product photo, no cropping — but keep it gently alive */
   .col-img,.editorial-img,.strip-cell{background:var(--bg2);min-height:230px}
   .col-img img,.editorial-img img,.strip-cell img{
     object-fit:contain;
-    transform:none;
+    max-width:92%;
+    max-height:92%;
     filter:none;
+    animation:gentleBreathe 6s ease-in-out infinite;
   }
   .dome-hero-img{object-fit:contain;background:var(--bg2)}
+
+  @keyframes gentleBreathe{
+    0%,100%{transform:scale(1)}
+    50%{transform:scale(1.05)}
+  }
 
   .col-text,.editorial-text{
     padding:14px 16px;
