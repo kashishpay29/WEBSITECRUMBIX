@@ -956,6 +956,14 @@ footer{
   .col-row{min-height:unset;height:230px;margin-bottom:10px}
   .editorial-block,.editorial-block.reverse{min-height:unset;height:230px}
 
+  /* Show the whole product photo, no cropping */
+  .col-img,.editorial-img,.dome-hero-img,.strip-cell{background:var(--bg2)}
+  .col-img img,.editorial-img img,.dome-hero-img,.strip-cell img{
+    object-fit:contain !important;
+    transform:none !important;
+    filter:none !important;
+  }
+
   .col-text,.editorial-text{
     padding:14px 16px;
     justify-content:center;
